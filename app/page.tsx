@@ -13,7 +13,7 @@ const products = [
     rating: 4.8,
     price: 899.99,
     originalPrice: 1199.99,
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/placeholder.svg",
     tag: "PROMOÇÃO",
   },
   {
@@ -22,7 +22,7 @@ const products = [
     rating: 4.9,
     price: 749.99,
     originalPrice: 999.99,
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/placeholder.svg",
     tag: "LANÇAMENTO",
   },
   {
@@ -30,7 +30,7 @@ const products = [
     name: "Nike SB Street Pink",
     rating: 4.7,
     price: 1099.99,
-    image: "/placeholder.svg?height=400&width=400",
+    image: "/placeholder.svg",
     tag: "EXCLUSIVO",
   },
 ]
@@ -43,7 +43,7 @@ export default function HomePage() {
         {/* Hero Section */}
         <section
           className="relative h-[calc(100vh-80px)] flex items-center justify-center text-center bg-cover bg-center"
-          style={{ backgroundImage: "url('/placeholder.svg?height=1080&width=1920')" }}
+          style={{ backgroundImage: "url('/public/placeholder.svg')" }}
         >
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10 flex flex-col items-center">
@@ -113,7 +113,7 @@ export default function HomePage() {
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 auto-rows-[250px] gap-4">
               <div className="col-span-2 row-span-2 rounded-lg overflow-hidden relative group">
                 <Image
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/placeholder.svg"
                   alt="Nike Dunk Gallery Image 1"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -121,7 +121,7 @@ export default function HomePage() {
               </div>
               <div className="rounded-lg overflow-hidden relative group">
                 <Image
-                  src="/placeholder.svg?height=250&width=250"
+                  src="/placeholder.svg"
                   alt="Nike Dunk Gallery Image 2"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -129,7 +129,7 @@ export default function HomePage() {
               </div>
               <div className="rounded-lg overflow-hidden relative group">
                 <Image
-                  src="/placeholder.svg?height=250&width=250"
+                  src="/placeholder.svg"
                   alt="Nike Dunk Gallery Image 3"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -137,7 +137,7 @@ export default function HomePage() {
               </div>
               <div className="rounded-lg overflow-hidden relative group">
                 <Image
-                  src="/placeholder.svg?height=250&width=250"
+                  src="/placeholder.svg"
                   alt="Nike Dunk Gallery Image 4"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -145,7 +145,7 @@ export default function HomePage() {
               </div>
               <div className="rounded-lg overflow-hidden relative group">
                 <Image
-                  src="/placeholder.svg?height=250&width=250"
+                  src="/placeholder.svg"
                   alt="Nike Dunk Gallery Image 5"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
