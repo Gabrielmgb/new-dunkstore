@@ -13,7 +13,7 @@ const products = [
     rating: 4.8,
     price: 899.99,
     originalPrice: 1199.99,
-    image: "/placeholder.svg",
+    image: "/new-dunkstore/placeholder.svg",
     tag: "PROMOÇÃO",
   },
   {
@@ -43,7 +43,7 @@ export default function HomePage() {
         {/* Hero Section */}
         <section
           className="relative h-[calc(100vh-80px)] flex items-center justify-center text-center bg-cover bg-center"
-          style={{ backgroundImage: "url('/hero-dunk.jpg')" }}
+          style={{ backgroundImage: "url('/new-dunkstore/hero-dunk.jpg')" }}
         >
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10 flex flex-col items-center">
