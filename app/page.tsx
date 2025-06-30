@@ -22,7 +22,7 @@ const products = [
     rating: 4.9,
     price: 749.99,
     originalPrice: 999.99,
-    image: "/nike-dunk-brown.jpg",
+    image: "/new-dunkstore/nike-dunk-brown.jpg",
     tag: "LANÇAMENTO",
   },
   {
@@ -30,7 +30,7 @@ const products = [
     name: "Nike SB Street Pink",
     rating: 4.7,
     price: 1099.99,
-    image: "/nike-dunk-grey.jpg",
+    image: "/new-dunkstore/nike-dunk-grey.jpg",
     tag: "EXCLUSIVO",
   },
 ]
