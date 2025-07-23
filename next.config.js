@@ -6,6 +6,7 @@ const nextConfig = {
   output: "export",
   basePath: isProd ? "/new-dunkstore" : "",
   assetPrefix: isProd ? '/new-dunkstore/' : '',
+  
   eslint: {
     ignoreDuringBuilds: true,
   },

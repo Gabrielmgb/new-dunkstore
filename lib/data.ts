@@ -74,12 +74,12 @@ export const products = [
     sizes: ["35", "36", "37", "38", "39", "40"],
     colors: ["Azul", "Branco"],
   },
-]
+];
 
-export const favoriteProducts = [products[2], products[1], products[0]]
+export const favoriteProducts = [products[2], products[1], products[0]];
 
 export const cartItems = [
   { ...products[0], quantity: 2, size: "42" },
   { ...products[2], quantity: 1, size: "38" },
   { ...products[4], quantity: 1, size: "41" },
-]
+];
