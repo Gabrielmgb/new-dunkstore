@@ -1,10 +1,10 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { ProductCard } from "@/components/product-card"
-import { Truck, ShieldCheck, Headset, ArrowRight } from "lucide-react"
-import Image from "next/image"
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { ProductCard } from "@/components/product-card";
+import { Truck, ShieldCheck, Headset, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const products = [
   {
@@ -33,7 +33,7 @@ const products = [
     image: "/new-dunkstore/nike-dunk-grey.jpg",
     tag: "EXCLUSIVO",
   },
-]
+];
 
 export default function HomePage() {
   return (
@@ -48,12 +48,21 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-black/60" />
           <div className="relative z-10 flex flex-col items-center">
             <div className="flex items-center">
-              <h1 className="text-7xl md:text-9xl font-extrabold tracking-tighter">DUNK</h1>
-              <h1 className="text-7xl md:text-9xl font-extrabold tracking-tighter text-orange-500">STORE</h1>
+              <h1 className="text-7xl md:text-9xl font-extrabold tracking-tighter">
+                DUNK
+              </h1>
+              <h1 className="text-7xl md:text-9xl font-extrabold tracking-tighter text-orange-500">
+                STORE
+              </h1>
             </div>
-            <p className="mt-4 text-lg md:text-xl text-gray-300">Seu Nike Dunk está aqui.</p>
+            <p className="mt-4 text-lg md:text-xl text-gray-300">
+              Seu Nike Dunk está aqui.
+            </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg px-8 py-6">
+              <Button
+                size="lg"
+                className="bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg px-8 py-6"
+              >
                 EXPLORAR COLEÇÃO <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button
@@ -94,7 +103,9 @@ export default function HomePage() {
             <h2 className="text-4xl md:text-5xl font-extrabold">
               DESTAQUES DA <span className="text-orange-500">SEMANA</span>
             </h2>
-            <p className="mt-4 text-lg text-gray-400">Os modelos mais desejados pelos sneakerheads</p>
+            <p className="mt-4 text-lg text-gray-400">
+              Os modelos mais desejados pelos sneakerheads
+            </p>
             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {products.map((product) => (
                 <ProductCard key={product.id} product={product} />
@@ -109,7 +120,9 @@ export default function HomePage() {
             <h2 className="text-4xl md:text-5xl font-extrabold">
               GALERIA <span className="text-orange-500">DUNK</span>
             </h2>
-            <p className="mt-4 text-lg text-gray-400">Inspire-se com o estilo e a cultura dos sneakers.</p>
+            <p className="mt-4 text-lg text-gray-400">
+              Inspire-se com o estilo e a cultura dos sneakers.
+            </p>
             <div className="mt-12 grid grid-cols-2 md:grid-cols-4 auto-rows-[250px] gap-4">
               <div className="col-span-2 row-span-2 rounded-lg overflow-hidden relative group">
                 <Image
@@ -162,7 +175,8 @@ export default function HomePage() {
               FIQUE POR <span className="text-orange-500">DENTRO</span>
             </h2>
             <p className="mt-4 text-lg text-gray-400">
-              Receba em primeira mão os lançamentos, promoções exclusivas e novidades do mundo sneaker
+              Receba em primeira mão os lançamentos, promoções exclusivas e
+              novidades do mundo sneaker
             </p>
             <form className="mt-8 flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
               <Input
@@ -183,5 +197,5 @@ export default function HomePage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

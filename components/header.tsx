@@ -1,13 +1,13 @@
-"use client";
-import { useState } from "react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Search, Heart, ShoppingBag, User } from "lucide-react";
-import { CartSidebar } from "./cart-sidebar";
+"use client"
+import { useState } from "react"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Search, Heart, ShoppingBag, User } from "lucide-react"
+import { CartSidebar } from "./cart-sidebar"
 
 export function Header() {
-  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false)
 
   return (
     <>
@@ -15,33 +15,19 @@ export function Header() {
         <div className="container mx-auto flex items-center justify-between h-20 px-4">
           <Link href="/" className="flex items-center gap-2">
             <span className="text-2xl font-extrabold tracking-tight">DUNK</span>
-            <span className="text-2xl font-extrabold tracking-tight text-orange-500">
-              STORE
-            </span>
+            <span className="text-2xl font-extrabold tracking-tight text-orange-500">STORE</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
-            <Link
-              href="/"
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-            >
+            <Link href="/" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
               HOME
             </Link>
-            <Link
-              href="/loja"
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-            >
+            <Link href="/loja" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
               LOJA
             </Link>
-            <Link
-              href="/sobre"
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-            >
+            <Link href="/sobre" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
               SOBRE
             </Link>
-            <Link
-              href="/contato"
-              className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
-            >
+            <Link href="/contato" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
               CONTATO
             </Link>
           </nav>
@@ -55,11 +41,7 @@ export function Header() {
               />
             </div>
             <div className="flex items-center gap-3">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="relative hover:bg-white/10"
-              >
+              <Button variant="ghost" size="icon" className="relative hover:bg-white/10">
                 <Heart className="h-6 w-6 text-white" />
                 <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-orange-500 text-xs font-bold text-white">
                   2
@@ -85,5 +67,5 @@ export function Header() {
       </header>
       <CartSidebar open={isCartOpen} onOpenChange={setIsCartOpen} />
     </>
-  );
+  )
 }
