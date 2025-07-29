@@ -1,10 +1,16 @@
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { ProductCard } from "@/components/product-card"
-import { favoriteProducts } from "@/lib/data"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Button } from "@/components/ui/button"
-import { List, LayoutGrid, Trash2, ShoppingCart } from "lucide-react"
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { ProductCard } from "@/components/product-card";
+import { favoriteProducts } from "@/lib/data";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Button } from "@/components/ui/button";
+import { List, LayoutGrid, Trash2, ShoppingCart } from "lucide-react";
 
 export default function FavoritosPage() {
   return (
@@ -39,10 +45,18 @@ export default function FavoritosPage() {
               </SelectContent>
             </Select>
             <div className="hidden sm:flex items-center bg-[#1A1A1A] rounded-md">
-              <Button variant="ghost" size="icon" className="text-white hover:bg-orange-500">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-white hover:bg-orange-500"
+              >
                 <LayoutGrid className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-gray-400 hover:bg-orange-500 hover:text-white">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-gray-400 hover:bg-orange-500 hover:text-white"
+              >
                 <List className="h-5 w-5" />
               </Button>
             </div>
@@ -74,5 +88,5 @@ export default function FavoritosPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
